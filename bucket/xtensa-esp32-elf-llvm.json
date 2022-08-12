@@ -1,7 +1,8 @@
 {
-  "homepage": "https://github.com/espressif/llvm-project",
-  "hash": "a98013242125fdbe60df586104c67ca230b658ff9afdb177691e9d25d9090d83fac0a9f00c75beb7deabcddfe8f972aba7d09369d8dfcca5d914066c2fb2d71a116dbe20aa544b7a3644e9648cf86e9f91bc0d93d5bf3fdfeca2eeccc53e83ade554ecdfc13a3b1923f088ef8245525b063b52acaab9c572c3c70a6b2f97b5c78f0cd7490e7bcb76a79f1abcdd360a58830a50ff9ecc98a4d6ab6fbdb8143974",
-  "version": "esp-14.0.0-20220415",
+  "homepage": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-tools.html",
+  "hash": "793e7bd9c40fcb9a4fababaaccf3e4c5b8d9554d406af1b1fbee51806bf8c5dd",
+  "license": "Apache-2.0",
+  "version": "14.0.0-20220415",
   "extract_dir": "xtensa-esp32-elf-llvm",
   "url": "https://github.com/espressif/llvm-project/releases/download/esp-14.0.0-20220415/xtensa-esp32-elf-llvm14_0_0-esp-14.0.0-20220415-win64.zip",
   "bin": [
@@ -43,9 +44,14 @@
     "bin\\xtensa-esp32-elf-strip.exe"
   ],
   "checkver": {
-        "github": "https://github.com/espressif/llvm-project"
+    "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-tools.html",
+    "regex": "xtensa-esp32-elf-llvm([\\d_]+-esp-([\\w-]+))-win64.zip"
   },
   "autoupdate": {
-        "url": "https://github.com/espressif/llvm-project/releases/download/$version/xtensa-esp32-elf-llvm14_0_0-$version-win64.zip"
+    "url": "https://github.com/espressif/llvm-project/releases/download/esp-$match2/xtensa-esp32-elf-llvm$version-win64.zip",
+    "hash": {
+      "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-tools.html",
+      "regex": "win64.zip.+\\s.+SHA256: $sha256"
+    }
   }
 }
