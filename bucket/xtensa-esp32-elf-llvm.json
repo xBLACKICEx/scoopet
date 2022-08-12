@@ -3,7 +3,6 @@
   "hash": "793e7bd9c40fcb9a4fababaaccf3e4c5b8d9554d406af1b1fbee51806bf8c5dd",
   "license": "Apache-2.0",
   "version": "14.0.0-20220415",
-  "extract_dir": "xtensa-esp32-elf-llvm",
   "url": "https://github.com/espressif/llvm-project/releases/download/esp-14.0.0-20220415/xtensa-esp32-elf-llvm14_0_0-esp-14.0.0-20220415-win64.zip",
   "bin": [
     "bin\\clang-format.exe",
