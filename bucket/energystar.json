@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/imbushuo/EnergyStar/releases/download/1.0.0-signed/Release.amd64.zip",
-        },
+        }
     },
     "bin": "EnergyStar.exe",
     "checkver": "github",
@@ -14,7 +14,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/imbushuo/EnergyStar/releases/download//Release.amd64.zip"
-            },
+            }
         },
         "hash": {
             "url": "$baseurl/checksums.sha256"
