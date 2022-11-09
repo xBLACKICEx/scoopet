@@ -8,7 +8,7 @@
             "url": "https://github.com/imbushuo/EnergyStar/releases/download/1.0.0-signed/Release.amd64.zip",
         },
     },
-    "bin": "EnergyStar.exe"
+    "bin": "EnergyStar.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
