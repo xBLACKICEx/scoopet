@@ -1,15 +1,23 @@
 {
-    "homepage": "https://github.com/imbushuo/EnergyStar",
-    "description": "Switches between the dark and light theme of Windows at scheduled times.",
+    "version": "0.7.2.0",
+    "description": "A Tool to Redirect News, Search, Widgets, Weather and More to Your Default Browser",
     "version": "1.0.0-signed",
-    "url": "https://github.com/imbushuo/EnergyStar/releases/download/$version/Release.amd64.zip",
-    "hash": "BB45E187B4842BFC5D25F838D6267C04CAD6FBBFBD70F61113598FC243D1DB49",
-    "innosetup": true,
-    "bin": "EnergyStar.exe",
-    "checkver": {
-        "github": "https://github.com/imbushuo/EnergyStar"
+    "homepage": "https://github.com/imbushuo/EnergyStar",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/imbushuo/EnergyStar/releases/download/1.0.0-signed/Release.amd64.zip",
+        },
     },
+    "bin": "EnergyStar.exe"
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/imbushuo/EnergyStar/releases/download/$version/Release.amd64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/imbushuo/EnergyStar/releases/download//Release.amd64.zip"
+            },
+        },
+        "hash": {
+            "url": "$baseurl/checksums.sha256"
+        }
     }
 }
