@@ -1,0 +1,15 @@
+{
+    "homepage": "https://github.com/imbushuo/EnergyStar",
+    "description": "Switches between the dark and light theme of Windows at scheduled times.",
+    "version": "1.0.0-signed",
+    "url": "https://github.com/imbushuo/EnergyStar/releases/download/$version/Release.amd64.zip",
+    "hash": "BB45E187B4842BFC5D25F838D6267C04CAD6FBBFBD70F61113598FC243D1DB49",
+    "innosetup": true,
+    "bin": "EnergyStar.exe",
+    "checkver": {
+        "github": "https://github.com/imbushuo/EnergyStar"
+    },
+    "autoupdate": {
+        "url": "https://github.com/imbushuo/EnergyStar/releases/download/$version/Release.amd64.zip"
+    }
+}
