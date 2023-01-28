@@ -1,17 +1,58 @@
 {
     "homepage": "https://www.disktool.cn/",
-    "description": "Partition Assistant is a free, professional, non-destructive partitioning tool that provides simple, easy-to-use disk partition management operations.",
-    "version": "9.1",
-    "license": "Freeware",
-    "url": "https://www2.aomeisoftware.com/download/pacn/PAGreen.zip",
+    "license": "freeware for non-commercial use",
+    "version": "9.8",
+    "url": "http://www2.aomeisoftware.com/download/pacn/PAGreen.zip",
+    "hash": "5e199044792d05dc9c07670f4308a3584c1d501664bc686d521d35a70f0d298b",
     "extract_dir": "PA_Green",
+    "bin": [
+        "PA_Green//PartAssist.exe",
+        "PA_Green//DyndiskConverter.exe",
+        "PA_Green//EPW.exe",
+        "PA_Green//Ntfs2Fat32.exe",
+        "PA_Green//AMBooter.exe",
+        "PA_Green//Ghost32.exe",
+        "PA_Green//wimlib-imagex.exe"
+    ],
     "shortcuts": [
         [
-            "PartAssist.exe",
-            "PA_Green"
+            "PA_Green//PartAssist.exe",
+            "AOMEI Partition Assistant"
+        ],
+        [
+            "PA_Green//DyndiskConverter.exe",
+            "AOMEI Dynamic Disk Converter"
+        ],
+        [
+            "PA_Green//EPW.exe",
+            "AOMEI Extent Partition Wizard"
+        ],
+        [
+            "PA_Green//Ntfs2Fat32.exe",
+            "AOMEI NTFS to FAT32 Converter"
+        ],
+        [
+            "PA_Green//AMBooter.exe",
+            "AOMEI AMBooter"
+        ],
+        [
+            "PA_Green//Ghost32.exe",
+            "Symantec Ghost Solution Suite"
         ]
     ],
+    "persist": [
+        "cfg.ini",
+        "wnd.ini",
+        "other.ini"
+    ],
+    "uninstaller": {
+        "file": "uninstall.bat"
+    },
+    "checkver": {
+        "url": "https://www.disktool.cn/download.html",
+        "regex": "<small>版本：([\\d.]+)</small>"
+    },
     "autoupdate": {
-        "url": "https://www2.aomeisoftware.com/download/pacn/PAGreen.zip"
+        "url": "http://www2.aomeisoftware.com/download/pacn/PAGreen.zip"
     }
 }
