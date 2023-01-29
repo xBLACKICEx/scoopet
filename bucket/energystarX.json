@@ -4,7 +4,7 @@
     "homepage": "🔋Improve your Windows device's battery life. A WinUI 3 GUI for imbushuo/EnergyStar.",
     "license": "MIT",
     "url": "https://github.com/JasonWei512/EnergyStarX/releases/download/v1.0.5/EnergyStarX_1.0.5.0_x64.Msix",
-    "hash": "",
+    "hash": "2e07b643c0b5a66520f81db0b9a3fbe82527748072a694bac718d9d66fe1a0ff",
     "architecture": {
         "64bit": {
             "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x64.Msix' | Remove-Item -Force -Recurse"
