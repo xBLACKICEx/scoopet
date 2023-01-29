@@ -12,7 +12,7 @@
     },
     "installer": {
         "script": [
-            "Expand-MsixArchive -SourcePath \"$dir\\EnergyStarX_1.0.5.0_x64.Msix\" -DestinationPath \"$dir\""
+            "Get-ChildItem \"$dir\" '*.msix' | Select-Object -ExpandProperty Fullname | Expand-7zipArchive -DestinationPath \"$dir\" -Removal",
         ]
     },
     "bin": [
